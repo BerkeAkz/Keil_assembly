@@ -1,0 +1,20 @@
+ORG 00H
+	START:
+	MOV P1,#00H
+	CALL DELAY
+	MOV P1,#01H
+	CALL DELAY
+	SJMP START
+
+ 
+ DELAY:
+        MOV R2,#255
+ LOOP1:
+        MOV R1,#255
+ LOOP2:
+       DJNZ R1,LOOP2
+       DJNZ R2,LOOP1
+       RET
+ 
+ END
+ 

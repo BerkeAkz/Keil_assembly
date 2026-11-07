@@ -1,0 +1,12 @@
+ORG 00H
+	SJMP START
+	
+	START: MOV A,#00H
+	       SJMP SAYICI
+	
+	SAYICI: MOV P1,A
+	        INC A
+			SJMP SAYICI
+			
+END
+	

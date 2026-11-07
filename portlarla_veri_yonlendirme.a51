@@ -1,0 +1,8 @@
+ORG 00H
+	START: MOV A,P1
+	       MOV 00H,P2
+		   MOV @R0,P1
+		   MOV P3,A
+		   SJMP START
+	
+END
