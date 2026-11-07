@@ -1,0 +1,11 @@
+ORG 00H
+	SJMP START
+	
+	START: MOV R0,#00AH
+	       MOV A,#0FFH
+		   
+	DONGU: MOV @R0,A
+	       DJNZ R0,DONGU 
+		   
+	SJMP $
+END

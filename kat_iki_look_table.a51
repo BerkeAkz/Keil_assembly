@@ -1,0 +1,17 @@
+ORG 00H
+	
+	SJMP START
+	
+	START: MOV DPTR,#TABLO
+	       MOV A,#0FFH
+		   MOV P1,A
+	
+	DONGU: MOV A,P1
+	       MOVC A,@A+DPTR
+		   MOV P3,A
+		   SJMP DONGU
+	       
+	
+	TABLO: DB 0,2,4,6,8,10
+
+END
