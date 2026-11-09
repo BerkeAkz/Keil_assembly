@@ -1,0 +1,8 @@
+ORG 00H
+	
+	MOV A,P0
+	SWAP A
+	XRL A,#0F0H
+	MOV P1,A
+	
+END

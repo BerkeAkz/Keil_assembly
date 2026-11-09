@@ -1,0 +1,8 @@
+		ORG 00H
+			
+		MOV A,P1
+		ANL A,#0FH
+		ORL A,#03H
+		MOV P3,A
+
+		END

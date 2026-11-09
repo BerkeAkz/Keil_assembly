@@ -1,0 +1,15 @@
+
+ORG 00H
+	START:
+    MOV R0,#30H
+	MOV R1,#5
+	SJMP DONGU
+	
+	DONGU:
+	MOV @R0,#00H
+	INC R0
+	DJNZ R1,DONGU
+	
+END
+  
+ 
